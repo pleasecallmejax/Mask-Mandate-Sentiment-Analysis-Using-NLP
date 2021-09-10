@@ -39,16 +39,11 @@ The data aggregated from the Twitter API, using the Postman endpoint, consisted 
 
 
 * ‘ID’- Each record contained a unique ID number. This column deemed unimportant for our analysis.
-
-*’Text’-This is the column that provides the tweet text.
-
-*’Geo’- If provided the place id of the city in which the tweet was published.
-
-*’Possibly Sensitive’- If the tweet contained sensitive information. This column was determined to be irrelevant/misleading and didn't contribute to my analysis.
-
-*’Source’- The device type that the tweet was made with.
-
-*’Created_At’- Exact time the tweet was published.
+* ’Text’-This is the column that provides the tweet text.
+* ’Geo’- If provided the place id of the city in which the tweet was published.
+* ’Possibly Sensitive’- If the tweet contained sensitive information. This column was determined to be irrelevant/misleading and didn't contribute to my analysis.
+* ’Source’- The device type that the tweet was made with.
+* ’Created_At’- Exact time the tweet was published.
 
 
 
