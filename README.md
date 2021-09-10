@@ -52,20 +52,11 @@ Our project goal was defined by our Business Problem where our client was only i
 
 <img src="images/maskedplane.webp" width="750">
 
+<img src="images/sourcespie.png" width="750">
 
 <img src="images/2021 masks.webp" width="750">
 
-
-
-
 <img src="images/2021 masks.webp" width="750">
-
-
-
-<img src="images/2021 masks.webp" width="750">
-
-
-
 
 ## Model Training and Testing
 
