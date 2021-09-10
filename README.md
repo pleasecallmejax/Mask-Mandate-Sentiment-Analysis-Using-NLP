@@ -38,12 +38,12 @@ My task is to identify the most inflammatory tweets which we believe responding 
 The data aggregated from the Twitter API, using the Postman endpoint, consisted  of over five thousand tweets containing keywords like mask mandate, Delta Airlines or FAANews. The data is located within the ‘data/tweets.csv’ file in this repository. In total, there are 14,723 rows of data and  columns. Of these 272 columns, 7 of the columns are described below. The first  columns are records of the given Zip code’s average home value between April, 1996 and April, 2018. The other 7 columns are:
 
 
-* ‘ID’- Each record contained a unique ID number. This column deemed unimportant for our analysis.
-*’Text’-This is the column that provides the tweet text.
-*’Geo’- If provided the place id of the city in which the tweet was published.
-*’Possibly Sensitive’- If the tweet contained sensitive information. This column was determined to be irrelevant/misleading and didn't contribute to my analysis.
-*’Source’- The device type that the tweet was made with.
-*’Created_At’- Exact time the tweet was published.
+* ‘ID’- Each record contained a unique ID number. This column deemed unimportant for our analysis. *
+*’Text’-This is the column that provides the tweet text. *
+*’Geo’- If provided the place id of the city in which the tweet was published. *
+*’Possibly Sensitive’- If the tweet contained sensitive information. This column was determined to be irrelevant/misleading and didn't contribute to my analysis. *
+*’Source’- The device type that the tweet was made with. *
+*’Created_At’- Exact time the tweet was published. *
 
 
 Our project goal was defined by our Business Problem where our client was only interested in identifying and understanding particularly negative tweets. Therefore, the metric most important to us getting accurate was true negatives, or correctly identifying negative tweets.
@@ -52,15 +52,9 @@ Our project goal was defined by our Business Problem where our client was only i
 <img src="images/maskedplane.webp" width="750">
 
 
-Having filtered our dataset to only include Zip codes with average prices under our client’s budget, we were left with the cities displayed above. The 10 different cities seen here consisted of 16 unique Zip codes between them. ‘Miami Gardens’ and ‘Homestead’ each still had 3 Zip codes within them that could fit our client’s budget.
-
-Having recognized our available options, we looked at the time series data of our 16 Zip codes to get an overview of how their average prices have changed in the last 22 years. 
-
-
 <img src="images/2021 masks.webp" width="750">
 
 
-Since we want to build a Multinomial Bayes model to predict the future ROI for each zip code in Miami-Dade County within our client's budget; we selected one specific Zip code to build our time series model on. For this purpose, we chose to use the highest growing Zip code since 2011 and hence, we ran our first Time Series model on the Zip code- 33126 to predict what its future value will be. Our approach was to later implement a similar workflow on other Zip codes in the County to identify which 5 Zip codes have the highest predicted ROI.
 
 
 <img src="images/2021 masks.webp" width="750">
