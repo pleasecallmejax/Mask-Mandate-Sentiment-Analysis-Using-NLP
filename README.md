@@ -38,12 +38,18 @@ My task is to identify the most inflammatory tweets which we believe responding 
 The data aggregated from the Twitter API, using the Postman endpoint, consisted  of over five thousand tweets containing keywords like mask mandate, Delta Airlines or FAANews. The data is located within the ‘data/tweets.csv’ file in this repository. In total, there are 14,723 rows of data and  columns. Of these 272 columns, 7 of the columns are described below. The first  columns are records of the given Zip code’s average home value between April, 1996 and April, 2018. The other 7 columns are:
 
 
-* ‘ID’- Each record contained a unique ID number. This column deemed unimportant for our analysis. *
-*’Text’-This is the column that provides the tweet text. *
-*’Geo’- If provided the place id of the city in which the tweet was published. *
-*’Possibly Sensitive’- If the tweet contained sensitive information. This column was determined to be irrelevant/misleading and didn't contribute to my analysis. *
-*’Source’- The device type that the tweet was made with. *
-*’Created_At’- Exact time the tweet was published. *
+* ‘ID’- Each record contained a unique ID number. This column deemed unimportant for our analysis.
+
+*’Text’-This is the column that provides the tweet text.
+
+*’Geo’- If provided the place id of the city in which the tweet was published.
+
+*’Possibly Sensitive’- If the tweet contained sensitive information. This column was determined to be irrelevant/misleading and didn't contribute to my analysis.
+
+*’Source’- The device type that the tweet was made with.
+
+*’Created_At’- Exact time the tweet was published.
+
 
 
 Our project goal was defined by our Business Problem where our client was only interested in identifying and understanding particularly negative tweets. Therefore, the metric most important to us getting accurate was true negatives, or correctly identifying negative tweets.
