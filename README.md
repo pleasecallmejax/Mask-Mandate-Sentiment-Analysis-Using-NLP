@@ -13,7 +13,6 @@ Author: **Jax Garnett**
 * [Model Training and Testing](#model-training-and-testing)
 * [Recommendations and Conclusion](#recommendations-and-Conclusion)
 * [Author](#author)
-* [Project Structure](#project-structure)
 
 
 ## Repository Links
@@ -23,6 +22,8 @@ Author: **Jax Garnett**
 
 
 ## Overview
+
+<img src="images/maskedplane.webp" width="750">
 
 For this project, I built a ------ model after going through robust natural language preprocessing steps that is used to predict tweet sentiment using the text of the tweet. We used data gathered from the Twitter API recently published on Twitter within the last two weeks. The resulting dataset consisted of over five thousand tweets containing keywords like mask mandate, Delta Airlines or FAANews. We were able to address The Federal Aviation, further refered to as the FAA's business problem and how to solve it with the help of machine learning. We designed a workflow that enabled us to quickly make accurate sentiment predictions for a given tweet and later used to iterate through more fresh data in order for us to gather conclusive and holistic insights into how to repond to the tweets. This project demonstrates our ability to perform data discovery, engineering and analysis. I created insightful visualizations with Matplotlib, and used libraraies such as Pandas, Sklearn, NLTK and Imblearn. Finally a non-technical presentation to showcase my understanding of key machine learning strategies in simple terms that were used to complete this project.
 
@@ -52,9 +53,6 @@ The data aggregated from the Twitter API, using the Postman endpoint, consisted 
 
 
 Our project goal was defined by our Business Problem where our client was only interested in identifying and understanding particularly negative tweets. Therefore, the metric most important to us getting accurate was true negatives, or correctly identifying negative tweets.
-
-
-<img src="images/maskedplane.webp" width="750">
 
 Traditional data cleaning consisted of checking for null values. Geo proved not very useful since only 12 tweets contained place ids so that was dropped. We also renamed the columns to be more simple. The dataset had four target classes, “Positive, Negative, Neutral, Unsure”. We removed “Unsure” and cut it down to three targets. Finally, we label encoded the three target classes.
 
@@ -89,15 +87,3 @@ In conclusion after an iterative process and hyper-parameter tuning then trying 
 - Jax Garnett<br>
     Github: https://github.com/pleasecallmejax<br>
     Email: jax.chaise@gmail.com<br>
-
-## Project Structure
-```
-├── final_notebook.ipynb
-├── README.md
-├── presentation_slides.pdf
-├── data
-├── images
-└── tools
-    ├── __init__.py
-    └── helpers.py
-```
