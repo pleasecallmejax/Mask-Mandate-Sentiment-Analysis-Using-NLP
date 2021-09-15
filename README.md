@@ -31,7 +31,7 @@ For this project, I built a ------ model after going through robust natural lang
 
 We framed our business problem by taking the role of an independent social media management agency. Our client is looking to find a way to identify and classify inflammatory tweets potentially spreading misinformation regarding the FAA's mask mandate. Delta has initiated a pilot program in partnership with the FAA to address public sentiment around mask mandates, passenger safety and conduct. This pilot is initially scoped to their largest engagement resource, Twitter. This year the FAA has had an unprecedented uptick in reports of unruly passengers and of 19 August 2021, 74% of all unruly passenger incidents on planes were attributed to issues around the federal mask mandate. The mindsets and behaviors that lead to unruly passengers begin long before they board a plane or even enter an airport, it begins in the everyday lives of people all across the US and globe. Delta desires to meet them where they are having these conversations, which is largely on social media. The client has established that they are not looking to dispel hoaxes but rather simply respond to. 
 
-<img src="images/tweetcloud.png" width="750">
+<img src="images/planecloud.png" width="750">
 
 My task is to identify the most inflammatory tweets which we believe responding to will have the greatest impact. i.e. That masks on planes are ineffective. The communications teams do not have the manpower to effectively track, identify, and then craft responses to negative sentiment due to the overwhelming volume. We are using my data to accurately predict tweet sentiment, find the most inflammatory ones, using Multinomial Naive Bayes modeling, and then prompt the FAA with recommended responses. That way our communications specialists can focus on reviewing and editing responses, rather than scouring feeds hoping to come across the ones they need to address. 
 
@@ -47,7 +47,7 @@ The data aggregated from the Twitter API, using the Postman endpoint, consisted 
 * ’Source’- The device type that the tweet was made with.
 * ’Created_At’- Exact time the tweet was published.
 
-<img src="images/barsources.webp" width="750">
+<img src="images/barsources.png" width="750">
 
 
 
@@ -77,7 +77,7 @@ We first created our baseline model with a dummy classifier. Due to the large ta
 ## Recommendations and Conclusion
 
 
-<img src="images/modelscore.webp" width="750">
+<img src="images/modelscore.png" width="750">
 
 
 In conclusion after an iterative process and hyper-parameter tuning then trying a few different kinds of models, Multinomial Bayes still came on top. Our best performing model, was able to classify the negative tweets with 75% accuracy.
